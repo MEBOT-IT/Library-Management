@@ -1,9 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Library Management</title>
-</head>
-<body>
-    <h1>hello world</h1>
-</body>
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <script src="../JAVASCRIPT/index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="date">Today's date:</div>
+      <div class="btn-container">
+        <a href="#" class="btn">Button 1</a>
+        <a href="#" class="btn">Button 2</a>
+        <a href="#" class="btn">Button 3</a>
+      </div>
+    </div>
+    <div class="header">
+      <!------------------------------------------brand----------------------------------------------------------------------------->
+      <div class="brand">
+        <img src="../IMAGES/logo.jpeg" class="logo" alt="" />
+      </div>
+      <!------------------------------------------option 1----------------------------------------------------------------------------->
+      <div class="drops">
+        <div class="dropdown" data-dropdown>
+          <button class="link" data-dropdown-button="">Option 1</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">heading 1</div>
+              <div class="dropdown-links">
+                <a href="#" class="tops1">Topic 1</a>
+                <a href="#" class="tops">Topic 2</a>
+                <a href="#" class="tops1">Topic 3</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">heading 2</div>
+              <div class="dropdown-links">
+                <a href="#" class="tops">Topic 2.1</a>
+                <a href="#" class="tops1">Topic 2.2</a>
+                <a href="#" class="tops">Topic 2.3</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">heading 3</div>
+              <div class="dropdown-links">
+                <a href="#" class="tops1">Topic 3.1</a>
+                <a href="#" class="tops">Topic 3.2</a>
+                <a href="#" class="tops1">Topic 3.3</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">heading 4</div>
+              <div class="dropdown-links">
+                <a href="#" class="tops">Topic 4.1</a>
+                <a href="#" class="tops1">Topic 4.2</a>
+                <a href="#" class="tops">Topic 4.3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------------------option 2----------------------------------------------------------------------------->
+        <div class="dropdown" data-dropdown>
+          <button class="link" data-dropdown-button="">Option 2</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">heading 1</div>
+              <div class="dropdown-links">
+                <a href="#" class="tops1">Topic 1</a>
+                <a href="#" class="tops">Topic 2</a>
+                <a href="#" class="tops1">Topic 3</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">heading 2</div>
+              <div class="dropdown-links">
+                <a href="#" class="tops">Topic 2.1</a>
+                <a href="#" class="tops1">Topic 2.2</a>
+                <a href="#" class="tops">Topic 2.3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------------------option 3----------------------------------------------------------------------------->
+        <div class="dropdown" data-dropdown>
+          <button class="link" data-dropdown-button>Option 3</button>
+          <div class="dropdown-menu">
+            <form class="login-form">
+              <label for="email">Library ID</label>
+              <input type="text" name="libid" id="libid" />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter key"
+              />
+              <button type="submit">Log-in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <form class="login-form">
+          <label for="email">Search</label>
+          <input type="search" name="search" id="search" />
+        </form>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="../IMAGES/150-banner-3.jpeg" alt="">
+    </div>
+  </body>
 </html>
