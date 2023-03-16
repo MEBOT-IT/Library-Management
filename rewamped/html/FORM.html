@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <title>Login abd Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6e4651c5e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/log.css">
+</head>
+
+<body>
+    <div>
+        <nav id="navbar" class="navbar-white">
+            <img src="../images/logo-red.png" class="logo" alt="">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./listing.html">Catalogs</a></li>
+                <li><a href="./contactform.html">Contact </a></li>
+            </ul>
+            <a href="./FORM.html" class="register-btn">Login/Register</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+        </nav>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input id="pwd" type="password" class="input-field" placeholder="Enter Password" required>
+                    <img id="eye-close" src="../images/eye-icons/eye-close.png" alt="">
+                    <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input id="email-field" type="email" class="input-field" placeholder="Email Id" required onkeyup="validateEmail()">
+                    <p id="email-error"></p>
+    
+                    <input id="pwd1"  type="password" class="input-field" placeholder="Enter Password" required>
+                    <img id="eye-close1" src="../images/eye-icons/eye-close.png" alt="">
+                    <p id="message">Password is <span id="strength">value</span></p> 
+                    
+                    <input type="checkbox" class="chech-box"><span>I agree to the <a href="t&c.html">terms & conditions</a></span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    <!--<footer>
+        <div class="footer">
+            <a href="#" class="face"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="you"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="linked"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
+            <a class="location"
+                href="https://www.google.com/maps/place/Dwaraka+Doss+Goverdhan+Doss+Vaishnav+College/@13.0737863,80.2122505,15z/data=!4m5!3m4!1s0x0:0x24732a5af8f16afd!8m2!3d13.0737863!4d80.2122505?shorturl=1">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+            </a>
+            <hr>
+            <p>copyright ©️ 2023, DGVC Arumbakkam</p>
+        </div>
+    </footer>-->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+
+        // for eye toggle
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+        //adding the eye-icon for password using onclick & function    
+        let eyeicon = document.getElementById("eye-close");
+        let eyeicon1 = document.getElementById("eye-close1");
+        let password = document.getElementById("pwd");
+        var password1 = document.getElementById("pwd1");
+
+        eyeicon.onclick = function () {
+            if (password.type == "password") {
+                password.type = "text";
+                eyeicon.src = "../images/eye-icons/eye-open.png";
+            }
+            else {
+                password.type = "password";
+                eyeicon.src = "../images/eye-icons/eye-close.png";
+            }
+        }
+        eyeicon1.onclick = function () {
+            if (password1.type == "password") {
+                password1.type = "text";
+                eyeicon1.src = "./eye-icons/eye-open.png";
+            }
+            else {
+                password1.type = "password";
+                eyeicon1.src = "./eye-icons/eye-close.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

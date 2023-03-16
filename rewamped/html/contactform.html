@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6e4651c5e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <img src="../images/logo-red.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./listing.html">Catalogs</a></li>
+            <li><a href="./contactform.html">Contact </a></li>
+        </ul>
+        <a href="./FORM.html" class="register-btn">Login/Register</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="hero">
+        <form class="form-box" onsubmit="sendEmail(); reset(); return false; ">
+            <p id="heading">Get In Touch</p>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Id" required>
+            <input type="text" id="phno" placeholder="Phone No." required>
+            <textarea name="" id="message" cols="30" rows="5" placeholder="How can we help you?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+   <!--- <div class="footer">
+        <a href="#" class="face"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="you"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="linked"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
+        <a class="location"
+            href="https://www.google.com/maps/place/Dwaraka+Doss+Goverdhan+Doss+Vaishnav+College/@13.0737863,80.2122505,15z/data=!4m5!3m4!1s0x0:0x24732a5af8f16afd!8m2!3d13.0737863!4d80.2122505?shorturl=1">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </a>
+        <hr>
+        <p>copyright ©️ 2023, DGVC Arumbakkam</p>
+    </div>-->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "vivekanandgnc@gmail.com",
+                Password: "//We need to enter password here//",
+                To: 'karthiharrish05@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New contact form enquiry",
+                Body: "Applicants details and contact information:" + "<br>"
+                    + "Name:" + document.getElementById("name").value
+                    + "<br> Email:" + document.getElementById("phno").value
+                    + "<br> Message/Enquiry:" + document.getElementById("message").value
+            }).then(
+                message => alert("Message sent successfully.")
+            );
+        }
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+
+</body>
+
+</html>
