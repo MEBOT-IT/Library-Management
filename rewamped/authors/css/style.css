@@ -655,7 +655,7 @@ nav.navbar-white .fa-bars {
     box-shadow: 10px 10px 10px rgb(61, 20, 35);
 }
 #author-img:hover{
-    width:200px ;
+    transform: scale(1.1);
     cursor: pointer;
     transition: 0.8s;
 }
