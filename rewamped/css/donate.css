@@ -1,0 +1,87 @@
+.donate {
+    display: flex;
+    margin: 6% 25%;
+}
+
+.d-content {
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: salmon;
+    width: 450px;
+    height: 800px;
+    padding: 30px;
+}
+
+.donate-form {
+    box-sizing: border-box;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(209, 206, 206);
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+}
+
+.pupp img {
+    padding: 40px;
+    width: 300px;
+}
+
+.donate-form form {
+    padding: 15px;
+}
+
+.donate-form input {
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(126, 5, 5, 0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.donate-form button {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.fieldset{
+    padding: 5px;
+    font-size: larger;
+}
+
+@media only screen and (max-width:700px) {
+    .hero {
+        padding-top: 40%;
+    }
+
+    .d-content {
+        display: none;
+    }
+
+    .donate .donate-form {
+        margin-left: -66px;
+        border-radius: 10px;
+        height: 800px;
+        padding: 10px;
+    }
+    .fieldset{
+        width: 260px;
+        padding: 5px;
+    }
+    .donate-form form {
+        padding: 5px;
+    }
+}

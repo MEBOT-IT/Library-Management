@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/donate.css">
+    <script src="https://kit.fontawesome.com/6e4651c5e7.js" crossorigin="anonymous"></script>
+    <title>Library management</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <img src="../images/logo-red.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./listing.html">Catalogs</a></li>
+            <li><a href="./contactform.html">Contact</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="hero">
+        <div class="donate">
+            <div class="d-content">
+                <h2> Welcome to DGVC library</h2>
+                <p>With your small gesture, you can bring a big change in the society.
+                    You can donate books, bookshelves and computers</p>
+                <div class="pupp">
+                    <img src="200w.webp">
+                </div>
+
+            </div>
+            <div class="donate-form">
+                <form method="get">
+                    <fieldset class="fieldset">
+                        <legend><b>Personal Information</b></legend>
+                        First Name: <input type="text" name="name" id="aaa" placeholder="Firstname" required><br><br>
+                        Last Name: <input type="text" name="name" id="bbb" placeholder="Lastname" required><br><br>
+                        Email: <input type="text" name="mail" id="yyy" placeholder="Enter your mail:" required><br><br>
+                        Gender:
+                        <input type="radio"> Male
+                        <input type="radio"> Female
+
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <legend><b>Contact Information</b></legend>
+                        Address:
+                        <textarea type="comments" id="zzz" cols="30" row="5" required></textarea><br><br>
+                        City:
+                        <select id="city">
+                            <option value="tn"> Ariyalur</option>
+                            <option value="tn"> Chennai</option>
+                            <option value="tn"> Coimbatore</option>
+                            <option value="tn"> Cuddalore</option>
+                            <option value="tn"> Dharmapuri</option>
+                            <option value="tn"> Dindigul</option>
+                            <option value="tn"> Erode</option>
+                            <option value="tn"> Kanchipuram</option>
+                            <option value="tn"> Kanyakumar</option>
+                            <option value="tn"> Karur</option>
+                            <option value="tn"> Krishnagiri</option>
+                            <option value="tn"> Madurai</option>
+                            <option value="tn"> Nagapattinam</option>
+                            <option value="tn"> Namakkal</option>
+                            <option value="tn"> Nilgiris</option>
+                            <option value="tn"> Perambalur</option>
+                            <option value="tn"> Pudukkottai</option>
+                            <option value="tn"> Ramanathapuram</option>
+                            <option value="tn"> Salem</option>
+                            <option value="tn"> Sivaganga</option>
+                            <option value="tn"> Thanjavur</option>
+                            <option value="tn"> Theni</option>
+                            <option value="tn"> Thoothukudi</option>
+                            <option value="tn"> Tiruchirappalli</option>
+                            <option value="tn"> Tirunelveli</option>
+                            <option value="tn"> Tirupathur</option>
+                            <option value="tn"> Tiruppur</option>
+                            <option value="tn"> Tiruvallur</option>
+                            <option value="tn"> Tiruvannamalai</option>
+                            <option value="tn"> Tiruvarur</option>
+                            <option value="tn"> Vellore</option>
+                            <option value="tn"> Viluppuram</option>
+                            <option value="tn"> Kallakurichi</option>
+                            <option value="tn"> Ranipet</option>
+                            <option value="tn"> Chengalpattu</option>
+                        </select><br><br>
+                        Phone:
+                        <input type="tel" name="phonenumber" id="sss" placeholder="type phone number"><br><br>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <legend> <b> Book Information </b></legend>
+                        Book Name:
+                        <input type="text" name="name" id="ccc" placeholder="book name" required><br><br>
+                        Author Name:
+                        <input type="text" name="name" id="aaa" placeholder="Author name" required><br><br>
+                    </fieldset><br>
+                    <button>submit</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+
+</html>

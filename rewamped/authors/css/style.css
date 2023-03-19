@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/pexels-pixabay-159490.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.register-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.header h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    padding-top: 18%;
+}
+
+.search-bar {
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-bar form input {
+    display: block;
+    height: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 3%;
+    color: #000;
+    font-size: medium;
+    font-weight: 500;
+
+}
+
+.search-bar form button {
+    background-color: rgba(253, 45, 45, 0.838);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+
+}
+
+.search-bar form button img {
+    width: 20px;
+    margin-top: 7px;
+}
+
+.search-bar form label {
+    font-weight: 600;
+    font-size: large;
+}
+
+/*-------------------genres---------------*/
+.sub-title {
+    margin: 50px 0 20px;
+    font-size: 3.3vw;
+    font-weight: 700;
+    color: #333;
+}
+
+.exclusives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div img {
+    width: 100%;
+    height: 150px;
+    border-radius: 7px;
+}
+
+.exclusives div {
+    position: relative;
+}
+
+.exclusives div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    text-shadow: 20px 10px 20px #fff;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px gray;
+}
+
+/*------------------------Authors to explore--------------------*/
+
+.trending {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.trending div img:hover {
+    transform: scale(1.1);
+}
+
+.trending h2 {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/*-----------------------------call to action--------------------------*/
+.cta {
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(../images/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5%;
+}
+
+.cta h3 {
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5.3vw;
+}
+
+.cta p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn {
+    background: #ff5361;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/*------------------Stream & Download------------------------------*/
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 7%;
+}
+
+
+.stories div {
+    position: relative;
+    text-align: left;
+    writing-mode: vertical-lr;
+}
+
+.stories div p {
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    color: #ff5361e2;
+    box-shadow: #fff;
+    text-shadow: 40px 10px 40px #000000;
+    padding: 5px;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.start-btn {
+    text-decoration: none;
+    background-color: #ff5361;
+    color: #fff;
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.about-msg {
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+
+.about-msg h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/*----------------------------------------footer---------------------------------*/
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer .face :hover {
+    color: #0330fa;
+}
+
+.footer .you :hover {
+    color: #fa0303;
+}
+
+.footer .twitter :hover {
+    color: #03d1fa;
+}
+
+.footer .linked :hover {
+    color: #0330fa;
+}
+
+.footer .insta :hover   {
+    color: rgb(214, 41, 118);
+}
+
+.footer .location :hover {
+    color: #fa0303;
+}
+
+.footer hr {
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer p {
+    padding-bottom: 15px;
+}
+
+
+
+nav .fa-bars {
+    display: none;
+}
+
+/*--------------------for small screen devices---------*/
+@media only screen and (max-width:700px) {
+    .logo {
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+        display: block;
+    }
+
+    .register-btn {
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+
+    nav .fa-bars {
+        display: block;
+        position: fixed;
+        top: 4%;
+        color: #fff;
+        font-size: 28px;
+        right: 7%;
+    }
+
+    .active::after {
+        left: -40px;
+        transform: translate(0, 50%);
+        bottom: 50%;
+    }
+
+    .hidemenu {
+        max-height: 300px;
+
+    }
+
+    .header h1 {
+        padding-top: 200px;
+        font-size: 7vw;
+    }
+
+    .search-bar {
+        width: 90%;
+        margin: 30px;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .search-bar form {
+        display: block;
+    }
+
+    .search-bar form input {
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .search-bar form button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .sub-title {
+        font-size: 6vw;
+    }
+
+    .cta {
+        padding: 15% 5%;
+    }
+
+    .cta h3 {
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+
+    .cta p {
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        padding: 6px 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .stories p {
+        font-size: 22px;
+    }
+
+    .about-msg {
+        font-size: 15px;
+    }
+
+    .stories div {
+        position: relative;
+        text-align: center;
+    }
+
+}
+
+
+/*---------------------------------------listing page-------------------------------------------------*/
+.navbar-white {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-white .nav-links li a {
+    color: #000
+}
+
+.navbar-white .register-btn {
+    background-color: #ff5361;
+    color: #fff;
+}
+
+nav.navbar-white .fa-bars {
+    color: #000;
+}
+
+.navbar-white .active::after {
+    background: #ff5361;
+}
+
+.list-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#left-col-head h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.left-col {
+    flex-basis: 80%;
+}
+
+.right-col {
+    flex-basis: 25%;
+}
+
+.left-col h1 {
+    color: #333;
+    font-weight: 600;
+
+}
+
+.house {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.house-img {
+    flex-basis: 30%;
+}
+
+.house-info {
+    margin-top: 50px;
+    flex-basis: 68%;
+    color: #333;
+}
+
+.house-img img {
+    width: 100%;
+
+    border-radius: 12px;
+}
+
+.house-info h3 {
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+
+.house-info i {
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+
+.house-price {
+    background-color: #ff5361;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.house-price a {
+    text-decoration: none;
+    color: white;
+}
+
+.house-price h4 {
+    font-size: 20px;
+}
+
+.pigination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pigination img {
+    width: 15px;
+    margin: 15px 20px;
+}
+
+.right-arrow {
+    transform: rotate(180deg);
+}
+
+.pigination span {
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.pigination .current {
+    background: #333;
+    color: #fff;
+}
+
+/*-------------------------------------small screen for listing page---------------------------*/
+@media only screen and (max-width:700px) {
+    .list-container {
+        margin-top: 150px;
+    }
+
+    #left-col-head h2 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+    .left-col,
+    .right-col,
+    .house-img,
+    .house-info {
+        flex-basis: 100%;
+    }
+
+    .left-col h1 {
+        font-size: 22px;
+    }
+    .house-info{
+        padding-bottom: 20px;
+    }
+    .house-info h3 {
+        font-size: 18px;
+    }
+
+    .house-info i {
+        font-size: 16px;
+    }
+
+    .pigination span {
+        margin: 10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .container-gallery{
+        margin-top: 100px;
+    }
+    .book-container{
+        padding-top: 5rem;
+    }
+   
+}
+
+/*--------------------gallery-----------------------*/
+.container-gallery {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.gallery img{
+    width: 100%;
+}
+/* Adding Author page styling here */
+#author-img{
+    width: 190px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px rgb(61, 20, 35);
+}
+#author-img:hover{
+    width:200px ;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.famousbooks{
+    margin-top: 15px;
+    display: flex;
+    column-gap: 100px;
+}
+.famousbooks  img{
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
