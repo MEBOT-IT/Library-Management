@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/audio.css">
+    <script src="https://kit.fontawesome.com/6e4651c5e7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <title>Library management</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <img src="../images/logo-red.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./listing.html">Catalogs</a></li>
+            <li><a href="./contactform.html">Contact </a></li>
+        </ul>
+        <a href="#" class="register-btn">Register now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="container">
+        <div class="hero-audio">
+            <div class="music">
+                <p>Author: Mark Manson</p>
+                <h1>The Subtle Art of Not Giving a F*ck</h1>
+                <p>Chapter-5</p>
+                <div class="track">
+                    <img src="../media/play.png" alt="" id="playbtn">
+                    <div id="waveform"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer footer-audio">
+            <a href="#"><i class="fa-brands fa-facebook-f" onMouseOver="this.style.color='#0330fa'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube" onMouseOver="this.style.color='#fa0303'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" onMouseOver="this.style.color='#03d1fa'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in" onMouseOver="this.style.color='#0330fa'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" onMouseOver="this.style.color='rgb(214, 41, 118)'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a
+                href="https://www.google.com/maps/place/Dwaraka+Doss+Goverdhan+Doss+Vaishnav+College/@13.0737863,80.2122505,15z/data=!4m5!3m4!1s0x0:0x24732a5af8f16afd!8m2!3d13.0737863!4d80.2122505?shorturl=1">
+                <i class="fa-sharp fa-solid fa-location-dot" onMouseOver="this.style.color='#fa0303'"
+                    onMouseOut="this.style.color='#999'"></i>
+            </a>
+            <hr>
+            <p>copyright ©️ 2023, DGVC Arumbakkam</p>
+        </div>
+    </div>
+    </div>
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+
+
+        var playbtn = document.getElementById("playbtn")
+
+
+
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: '#ddd',
+            progressColor: 'salmon',
+            barWidth: 4,
+            responsive: true,
+            height: 90,
+            barRadius: 4
+        });
+
+        wavesurfer.load('../media/the_subtle_art/ch5.mp3');
+
+
+        playbtn.onclick = function(){
+            wavesurfer.playPause();
+            if(playbtn.src.includes("play.png")){
+                playbtn.src = "../media/pause.png";
+            }else{
+                playbtn.src = "../media/play.png";
+            }
+        }
+
+        wavesurfer.on('finish' ,function(){
+            playbtn.src = "../media/play.png";
+            wavesurfer.stop();
+        })
+    </script>
+</body>
+
+</html>

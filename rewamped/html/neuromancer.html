@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6e4651c5e7.js" crossorigin="anonymous"></script>
+    <title>Library management</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <img src="../images/logo-red.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./listing.html">Catalogs</a></li>
+            <li><a href="./contactform.html">Contact </a></li>
+        </ul>
+        <a href="#" class="register-btn">Register now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="book-container container">
+        <div class="about-msg">
+            <h2>About The "Neuromancer" </h2>
+            <p>"Neuromancer" is a science fiction novel written by William Gibson and published in 1984. It is often
+                considered a seminal work in the cyberpunk genre and has won numerous awards, including the Hugo,
+                Nebula, and Philip K. Dick awards.<br><br>
+
+                The novel is set in a dystopian future where artificial intelligence and virtual reality have become
+                commonplace. The story follows a former hacker named Henry Case who is hired by a mysterious employer to
+                pull off a seemingly impossible hack. Along the way, he encounters a powerful artificial intelligence, a
+                lethal street samurai, and a drug-addicted cyber-cowboy, among other characters.<br><br>
+
+                The book is known for its vivid depictions of cyberspace and the ways in which humans can interface with
+                it. It also explores themes such as identity, consciousness, and the nature of reality in a world where
+                technology has become deeply intertwined with human existence.<br><br>
+
+                "Neuromancer" has been highly influential in popular culture and has inspired numerous works in science
+                fiction, video games, and film. It is often cited as one of the best science fiction novels ever written
+                and is a must-read for fans of the genre.</p>
+        </div>
+        <div class="read-down" style="display: flex; flex-direction: row;">
+            <a href="../books_docs/Alchemist.pdf" target="_blank" class="start-btn">Read <i
+                    class="fa-sharp fa-solid fa-book-open-reader"></i></a>
+            <a href="../books_docs/Alchemist.pdf" class="start-btn" download>Download <i
+                    class="fa-solid fa-download"></i></a>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a
+            href="https://www.google.com/maps/place/Dwaraka+Doss+Goverdhan+Doss+Vaishnav+College/@13.0737863,80.2122505,15z/data=!4m5!3m4!1s0x0:0x24732a5af8f16afd!8m2!3d13.0737863!4d80.2122505?shorturl=1">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </a>
+        <hr>
+        <p>copyright ©️ 2023, DGVC Arumbakkam</p>
+    </div>
+    </div>
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+
+</html>
