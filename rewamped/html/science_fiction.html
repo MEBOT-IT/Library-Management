@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6e4651c5e7.js" crossorigin="anonymous"></script>
+    <title>Library management</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <img src="../images/logo-red.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="catalog.html">Catalogs</a></li>
+            <li><a href="./contactform.html">Contact </a></li>
+        </ul>
+        <a href="#" class="register-btn">Register now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="container">
+        <div class="list-container">
+            <div class="left-col" id="left-col-head">
+                <p>200+ options</p>
+                <h2>Genre : Novels</h2>
+            </div>
+            <div class="left-col">
+                <h1>Invisible Man</h1>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="../books_docs/invisible man.jpg" alt="">
+                    </div>
+                    <div class="house-info">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Blanditiis nihil nam recusandae fugit incidunt eveniet repellendus. Animi,
+                            ipsa voluptatibus eum, eaque vel accusamus voluptate doloremque dolor, fugit laborum iure
+                            illo.</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="house-price">
+                            <div>
+                                <a href="#">
+                                    <p>Read</p>
+                                    <h4>Download</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-col">
+                <h1>Invisible Man</h1>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="../books_docs/middle march.jpg" alt="">
+                    </div>
+                    <div class="house-info">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Blanditiis nihil nam recusandae fugit incidunt eveniet repellendus. Animi,
+                            ipsa voluptatibus eum, eaque vel accusamus voluptate doloremque dolor, fugit laborum iure
+                            illo.</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="house-price">
+                            <div>
+                                <a href="#">
+                                    <p>Read</p>
+                                    <h4>Download</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pigination">
+            <img src="../../images/arrow.png" alt="">
+            <span class="current">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>&middot; &middot; &middot; &middot;</span>
+            <span>20</span>
+            <img src="../../images/arrow.png" alt="" class="right-arrow">
+        </div>
+        <div class="footer">
+            <a href="#"><i class="fa-brands fa-facebook-f" onMouseOver="this.style.color='#0330fa'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube" onMouseOver="this.style.color='#fa0303'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" onMouseOver="this.style.color='#03d1fa'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in" onMouseOver="this.style.color='#0330fa'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" onMouseOver="this.style.color='rgb(214, 41, 118)'"
+                    onMouseOut="this.style.color='#999'"></i></a>
+            <a
+                href="https://www.google.com/maps/place/Dwaraka+Doss+Goverdhan+Doss+Vaishnav+College/@13.0737863,80.2122505,15z/data=!4m5!3m4!1s0x0:0x24732a5af8f16afd!8m2!3d13.0737863!4d80.2122505?shorturl=1">
+                <i class="fa-sharp fa-solid fa-location-dot" onMouseOver="this.style.color='#fa0303'"
+                    onMouseOut="this.style.color='#999'"></i>
+            </a>
+            <hr>
+            <p>copyright ©️ 2023, DGVC Arumbakkam</p>
+        </div>
+    </div>
+    </div>
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+
+</html>
