@@ -729,3 +729,13 @@ nav.navbar-white .fa-bars {
         padding-top: 10px;
     }
 }
+
+/* adding authors famous book rating starts */
+.famousbook-rating{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 80px;
+}
+.rate{
+  margin-left: 222px;
+}

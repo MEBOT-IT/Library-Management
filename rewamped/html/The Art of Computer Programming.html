@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6e4651c5e7.js" crossorigin="anonymous"></script>
+    <title>Library management</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <img src="../images/logo-red.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./catalog.html">Catalogs</a></li>
+            <li><a href="./contactform.html">Contact</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="container book-container">
+        <div class="about-msg">
+            <h2>The Art of Computer Programming </h2>
+            <p>Considered a classic in the field, "The Art of Computer Programming" is a multi-volume work that covers the fundamental concepts and techniques of computer programming. The book is known for its thoroughness and attention to detail, and has been praised for its clear and concise explanations.<br><br>
+
+                The novel explores themes of following one's dreams, personal growth, and the importance of listening to
+                one's heart. It emphasizes the idea that everyone has a unique destiny, and that the universe conspires
+                to help us achieve our goals if we have the courage to pursue them.<br><br>
+
+                "The Alchemist" has become a worldwide phenomenon, having been translated into more than 80 languages
+                and selling over 150 million copies worldwide. The book's message of hope and inspiration has resonated
+                with readers of all ages and backgrounds, and has been praised for its simplicity, wisdom, and spiritual
+                depth. It has been described as a modern classic and a must-read for anyone seeking to live a more
+                fulfilling life.</p>
+        </div>
+        <div class="read-down" style="display: flex; flex-direction: row;">
+            <a href="../books_docs/The Invisible Man.pdf" target="_blank" class="start-btn">Read <i
+                    class="fa-sharp fa-solid fa-book-open-reader"></i></a>
+            <a href="../books_docs/The Invisible Man.pdf" class="start-btn" download>Download <i
+                    class="fa-solid fa-download"></i></a>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a
+            href="https://www.google.com/maps/place/Dwaraka+Doss+Goverdhan+Doss+Vaishnav+College/@13.0737863,80.2122505,15z/data=!4m5!3m4!1s0x0:0x24732a5af8f16afd!8m2!3d13.0737863!4d80.2122505?shorturl=1">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </a>
+        <hr>
+        <p>copyright ©️ 2023, DGVC Arumbakkam</p>
+    </div>
+    </div>
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+
+</html>
